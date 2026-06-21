@@ -100,7 +100,7 @@
         \hfill \break
          \vspace{5mm}
          
-        \includegraphics[width=0.6\textwidth]{Images/Durham_Uni_Name.png}   
+        \includegraphics[width=0.6\textwidth]{images/durham_uni_name.png}   
        
         \vspace{1cm}
         \LARGE
@@ -272,13 +272,13 @@ QQ plots indicate if a variable is normally distributed. These are shown below f
     % First image
     \begin{minipage}[b]{0.38\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{QQ Plot for ROE.pdf} % Replace with your image path
+        \includegraphics[width=\textwidth]{plots/qq_plot_for_roe.pdf} % Replace with your image path
     \end{minipage}
     \hfill
     % Second image
     \begin{minipage}[b]{0.4\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{QQ Plot for Sustainability_Score.pdf} % Replace with your image path
+        \includegraphics[width=\textwidth]{plots/qq_plot_for_sustainability_score.pdf} % Replace with your image path
     \end{minipage}
     \caption{QQ Plots for ROE and Sustainability Scores}
     \label{fig:sidebyside_minipage}
@@ -334,7 +334,7 @@ As stated in the introduction, considering response intercorrelation is what sep
 Before proceeding with each MRR model, it was worth briefly examining the relationship between the two response variables: ROE and sustainability score. Figure~\ref{fig:ROESUS} shows a scatter plot of these responses, with a fitted regression line included to highlight their correlation:
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\linewidth]{ROESUS.pdf}
+    \includegraphics[width=0.5\linewidth]{plots/roesus.pdf}
     \caption{Scatter Plot of Return on Equity vs. Sustainability Score}
     \label{fig:ROESUS}
 \end{figure}
@@ -966,7 +966,7 @@ In such cases, the matrix \( \mathbf{X}^\top \mathbf{X} \) becomes singular, mak
 \noindent Ridge regression estimates are obtained by solving the least squares problem, subject to a constraint on the sum of squared coefficients: $\| \boldsymbol{\beta} \|_2^2=\sum_{j=1}^p \beta_j^2 \leq c$, where $p$ is the number of predictors and $c$ is a positive constant. This constraint defines an \( \ell_2 \)-ball, which in the two-dimensional case (\( p = 2 \)) corresponds to a filled circle and provides a geometric interpretation of the ridge penalty. See the right-hand graphic in Figure~\ref{fig:ridge-lasso-geom} for this interpretation:
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.55\textwidth]{Images/Ridge Lasso Geom.png}
+    \includegraphics[width=0.55\textwidth]{images/ridge_lasso_geom.png}
     \caption{Left: the Lasso constraint \( |\beta_1| + |\beta_2| \leq c \),\quad Right: the Ridge constraint \( \beta_1^2 + \beta_2^2 \leq c \).}
     \label{fig:ridge-lasso-geom}
 \end{figure}
@@ -1754,7 +1754,7 @@ This recursive splitting means that CARTs are able to detect patterns that occur
 Each leaf node relates to a hyper-rectangle in the feature space, $R_j$, $j = \{1, \ldots, J\}$. In other words, the feature space defined by $X_1, X_2, \ldots, X_p$ is split into $J$ distinct regions which do not overlap, as shown below:
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.72\textwidth]{Images/partition.png}
+    \includegraphics[width=0.72\textwidth]{images/partition.png}
     \caption{Incorrect vs. Correct Partitioning}
     \label{fig:partition}
 \end{figure}
@@ -1837,7 +1837,7 @@ In Figure~\ref{fig:MRT}, the left panel visualises the MRT setup: a response mat
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\linewidth]{Images/MRT Image.png}
+    \includegraphics[width=0.8\linewidth]{images/mrt_image.png}
     \caption{MRT Splitting.\cite{qcbs_workshop}}
     \label{fig:MRT}
 \end{figure}
@@ -2058,7 +2058,7 @@ The CRRF model was also analysed in relation to how it determined predictor feat
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{Plots/rffeatureimportance.png}
+    \includegraphics[width=\linewidth]{plots/rffeatureimportance.png}
     \caption{CRRF Feature Importance}
     \label{fig:crrf_feature_importance}
 \end{figure}
@@ -2580,7 +2580,7 @@ As the predictions were produced in the transformed space, they were mapped back
 XGBoost achieved an ANRMSE of 0.4267, indicating an excellent fit. This was the best performance among all the models tested and highlights XGBoost’s effectiveness in modelling complex datasets.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth]{Plots/XGBoost Feature Importance.png}
+    \includegraphics[width=0.9\textwidth]{plots/xgboost_feature_importance.png}
     \caption{XGBoost Feature Importance}
     \label{fig:xgboostFI}
 \end{figure}
@@ -2706,14 +2706,14 @@ Another area for future work could involve using more MRR models on this dataset
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{Plots/VIF.png}
+    \includegraphics[width=0.8\textwidth]{plots/vif.png}
     \caption{VIF Values post Dataset Cleaning}
     \label{fig:vif}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{Plots/Forward Stepwise Selection Plot.png}
+    \includegraphics[width=0.5\textwidth]{plots/forward_stepwise_selection_plot.png}
     \caption{Forward Stepwise Selection with an ANRMSE Curve}
     \label{fig:fss}
 \end{figure}

@@ -76,15 +76,15 @@ This work was completed as part of my undergraduate degree and is intended for a
 ## 📁 Repository Structure
 
 ```plaintext
-📦Dissertation/
- ┣ 📂Articles/                   # Reference papers and supporting articles
- ┣ 📂Code/                      # All R scripts and notebooks for model implementation and evaluation
- ┣ 📂Dissertation Meetings/     # Notes and summaries from supervisor meetings
- ┣ 📂Example Dissertations/     # Sample dissertations for reference
- ┣ 📂Presentation and Poster/   # Presentation slides and academic poster work
- ┣ 📂Report Versions/           # Drafts and prior versions of the dissertation
+📦dissertation/
+ ┣ 📂articles/                   # Reference papers and supporting articles
+ ┣ 📂code/                      # All R scripts and notebooks for model implementation and evaluation
+ ┣ 📂dissertation-meetings/     # Notes and summaries from supervisor meetings
+ ┣ 📂example-dissertations/     # Sample dissertations for reference
+ ┣ 📂presentation-and-poster/   # Presentation slides and academic poster work
+ ┣ 📂report-versions/           # Drafts and prior versions of the dissertation
  ┣ 📂report-latex/              # LaTeX source code for dissertation write-up
  ┣ 📜README.md                  # This file
- ┣ 📄Raul_Unnithan_Dissertation.pdf   # Final dissertation report
- ┣ 📄Raul Unnithan Poster.pdf         # Academic poster for research presentation
- ┗ 📄Raul Unnithan Presentation.pdf   # Final presentation slides
+ ┣ 📄raul_unnithan_dissertation.pdf   # Final dissertation report
+ ┣ 📄raul_unnithan_poster.pdf         # Academic poster for research presentation
+ ┗ 📄raul_unnithan_presentation.pdf   # Final presentation slides
